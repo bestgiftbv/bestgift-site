@@ -31,7 +31,7 @@
     });
   }
 
-  // Product thumbnails
+  // Legacy product thumbnails (if any remain)
   document.querySelectorAll(".thumb").forEach(function (btn) {
     btn.addEventListener("click", function () {
       var gallery = btn.getAttribute("data-gallery");
@@ -44,7 +44,6 @@
       var mainImg = card.querySelector(".product-main img");
       if (mainImg) {
         mainImg.src = src;
-        // keep a sensible alt based on gallery
         var alts = {
           pens: "Pix din lemn gravat, personalizat",
           martisor: "Mărțișor / breloc din lemn gravat",
@@ -79,11 +78,13 @@
     document.body.style.overflow = "";
   }
 
-  document.querySelectorAll(".product-main img").forEach(function (img) {
-    img.addEventListener("click", function () {
-      openLightbox(img.src, img.alt);
+  document
+    .querySelectorAll(".product-main img, .tile-media img")
+    .forEach(function (img) {
+      img.addEventListener("click", function () {
+        openLightbox(img.src, img.alt);
+      });
     });
-  });
 
   if (lightboxClose) {
     lightboxClose.addEventListener("click", function (e) {

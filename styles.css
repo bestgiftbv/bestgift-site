@@ -800,3 +800,136 @@ p { margin: 0 0 1em; }
     transition-duration: 0.01ms !important;
   }
 }
+
+/* Product grid (catalogue) */
+.product-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+}
+
+.product-tile,
+.package-card {
+  background: var(--cream);
+  border-radius: var(--radius);
+  overflow: hidden;
+  border: 1px solid rgba(139, 94, 60, 0.1);
+  box-shadow: 0 4px 20px rgba(42, 31, 24, 0.05);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.25s var(--ease), box-shadow 0.25s var(--ease);
+}
+
+.product-tile:hover,
+.package-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow);
+}
+
+.tile-media {
+  aspect-ratio: 1;
+  overflow: hidden;
+  background: var(--cream-dark);
+}
+
+.package-card .tile-media {
+  aspect-ratio: 4 / 3;
+}
+
+.tile-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  cursor: zoom-in;
+  transition: transform 0.5s var(--ease);
+}
+
+.product-tile:hover .tile-media img,
+.package-card:hover .tile-media img {
+  transform: scale(1.04);
+}
+
+.tile-body {
+  padding: 1.15rem 1.2rem 1.35rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.tile-body h3 {
+  margin-bottom: 0.25rem;
+  font-size: 1.35rem;
+}
+
+.tile-body .price {
+  margin: 0 0 0.65rem;
+}
+
+.tile-body .price-value {
+  font-size: 1.45rem;
+}
+
+.tile-body > p {
+  color: var(--ink-soft);
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+  flex: 1;
+}
+
+.tile-dim {
+  font-size: 0.88rem !important;
+  color: var(--wood) !important;
+  font-weight: 500;
+  margin-bottom: 0.35rem !important;
+}
+
+.tile-tag {
+  margin: 0.5rem 0 0 !important;
+  flex: 0 !important;
+  display: inline-block;
+  align-self: flex-start;
+  font-size: 0.75rem !important;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--red) !important;
+  background: rgba(139, 30, 45, 0.08);
+  padding: 0.3rem 0.65rem;
+  border-radius: 999px;
+}
+
+@media (min-width: 560px) {
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.35rem;
+  }
+}
+
+@media (min-width: 900px) {
+  .product-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+  }
+}
+
+/* Packages */
+.packages {
+  background: var(--cream);
+}
+
+.package-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+}
+
+.package-card {
+  background: var(--white);
+}
+
+@media (min-width: 700px) {
+  .package-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+}

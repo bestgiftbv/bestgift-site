@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="bestgift.bv — cadouri handmade din lemn, gravate cu laser. Pixuri, mărțișoare și plăcuțe personalizate. Brașov, livrare în toată țara." />
-  <title>bestgift.bv — Cadouri handmade din lemn | Brașov</title>
+  <meta name="description" content="bestgift.bv — cadouri personalizate din lemn, gravate cu laser. Pixuri, creioane, brelocuri, semne de carte, globuri, mărțișoare, inimă mare și tablouri A4. Brașov, livrare în toată țara." />
+  <title>bestgift.bv — Cadouri personalizate din lemn | Brașov</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet" />
@@ -26,6 +26,7 @@
       </button>
       <nav class="site-nav" id="site-nav" aria-label="Navigare principală">
         <a href="#produse">Produse</a>
+        <a href="#pachete">Pachete</a>
         <a href="#cum-comand">Cum comand</a>
         <a href="#despre">Despre</a>
         <a href="#contact" class="nav-cta">Contact</a>
@@ -38,11 +39,12 @@
     <section class="hero" aria-labelledby="hero-title">
       <div class="hero-bg" aria-hidden="true"></div>
       <div class="hero-content">
-        <p class="eyebrow">Cadouri handmade · Brașov</p>
+        <p class="eyebrow">Cadouri personalizate · Brașov</p>
         <h1 id="hero-title">Lemn gravat cu grijă,<br />pentru momente speciale</h1>
         <p class="hero-lead">
-          Pixuri, mărțișoare și plăcuțe personalizate — lucrate manual, cu laser,
-          pentru cei dragi. Predare personală în Brașov sau livrare în toată țara.
+          Pixuri, creioane, brelocuri, semne de carte, globuri, mărțișoare și
+          tablouri — toate personalizate cu laser. Predare personală în Brașov
+          sau livrare în toată țara.
         </p>
         <div class="hero-actions">
           <a class="btn btn-primary" href="#produse">Vezi produsele</a>
@@ -53,118 +55,167 @@
       </div>
       <div class="hero-gallery" aria-hidden="true">
         <img src="public/products/pens-1.jpg" alt="" class="hero-shot hero-shot-1" width="400" height="500" />
-        <img src="public/products/martisor-group.jpg" alt="" class="hero-shot hero-shot-2" width="400" height="400" />
-        <img src="public/products/plaque-1.jpg" alt="" class="hero-shot hero-shot-3" width="400" height="400" />
+        <img src="public/products/bookmark-1.jpg" alt="" class="hero-shot hero-shot-2" width="400" height="400" />
+        <img src="public/products/globe-1.jpg" alt="" class="hero-shot hero-shot-3" width="400" height="400" />
       </div>
     </section>
 
-    <!-- PRODUCTS -->
+    <!-- PRODUCTS GRID -->
     <section class="section products" id="produse" aria-labelledby="produse-title">
       <div class="container">
         <header class="section-header">
           <p class="eyebrow">Colecție</p>
           <h2 id="produse-title">Produsele noastre</h2>
-          <p class="section-lead">Trei categorii de cadouri din lemn, personalizate după dorința ta.</p>
+          <p class="section-lead">Opt cadouri din lemn, personalizate după dorința ta — text, nume sau mesaj.</p>
         </header>
 
-        <!-- Pens -->
-        <article class="product-card" id="pixuri">
-          <div class="product-gallery">
-            <div class="product-main">
-              <img src="public/products/pens-1.jpg" alt="Pix din lemn gravat: Cea mai bună profesoară, cu șnur de mărțișor" data-gallery="pens" data-index="0" />
+        <div class="product-grid">
+          <article class="product-tile" id="pixuri">
+            <div class="tile-media">
+              <img src="public/products/pens-1.jpg" alt="Pixuri din lemn gravate, personalizate" width="400" height="400" />
             </div>
-            <div class="product-thumbs" role="list">
-              <button type="button" class="thumb is-active" data-gallery="pens" data-src="public/products/pens-1.jpg" aria-label="Pix 1">
-                <img src="public/products/pens-1.jpg" alt="" />
-              </button>
-              <button type="button" class="thumb" data-gallery="pens" data-src="public/products/pens-2.jpg" aria-label="Pix 2">
-                <img src="public/products/pens-2.jpg" alt="" />
-              </button>
-              <button type="button" class="thumb" data-gallery="pens" data-src="public/products/pens-3.jpg" aria-label="Pix 3">
-                <img src="public/products/pens-3.jpg" alt="" />
-              </button>
+            <div class="tile-body">
+              <h3>Pixuri</h3>
+              <p class="price"><span class="price-value">8 lei</span></p>
+              <p>Pixuri elegante din lemn, gravate cu laser cu mesajul sau numele ales.</p>
+              <p class="tile-tag">Personalizare inclusă</p>
             </div>
-          </div>
-          <div class="product-info">
-            <h3>Pixuri din lemn</h3>
-            <p class="price"><span class="price-value">35 lei</span></p>
-            <p>
-              Pixuri elegante din lemn natural, gravate cu laser cu mesajul tău —
-              pentru profesori, colegi sau cei dragi. Pot fi oferite ca mărțișor,
-              cu șnur roșu-alb tradițional.
-            </p>
-            <ul class="product-meta">
-              <li>Personalizare cu text la alegere</li>
-              <li>Lemn natural + accente metalice</li>
-              <li>Ambalaj cadou inclus</li>
-            </ul>
-          </div>
-        </article>
+          </article>
 
-        <!-- Martisoare -->
-        <article class="product-card product-card-reverse" id="martisoare">
-          <div class="product-gallery">
-            <div class="product-main">
-              <img src="public/products/martisor-group.jpg" alt="Colecție de mărțișoare din lemn gravate, cu șnur roșu-alb" data-gallery="martisor" data-index="0" />
+          <article class="product-tile" id="creioane">
+            <div class="tile-media">
+              <img src="public/products/pencil-1.jpg" alt="Creion personalizat cu nume" width="400" height="400" />
             </div>
-            <div class="product-thumbs" role="list">
-              <button type="button" class="thumb is-active" data-gallery="martisor" data-src="public/products/martisor-group.jpg" aria-label="Mărțișoare grup">
-                <img src="public/products/martisor-group.jpg" alt="" />
-              </button>
-              <button type="button" class="thumb" data-gallery="martisor" data-src="public/products/martisor-1.jpg" aria-label="Mărțișor 1">
-                <img src="public/products/martisor-1.jpg" alt="" />
-              </button>
-              <button type="button" class="thumb" data-gallery="martisor" data-src="public/products/martisor-2.jpg" aria-label="Mărțișor 2">
-                <img src="public/products/martisor-2.jpg" alt="" />
-              </button>
+            <div class="tile-body">
+              <h3>Creioane</h3>
+              <p class="price"><span class="price-value">6 lei</span></p>
+              <p>Creioane colorate, personalizate cu nume, mesaj sau ocazie specială.</p>
+              <p class="tile-tag">Personalizare inclusă</p>
             </div>
-          </div>
-          <div class="product-info">
-            <h3>Mărțișoare &amp; brelocuri</h3>
-            <p class="price"><span class="price-value">35 lei</span></p>
-            <p>
-              Inimi și charm-uri din lemn, gravate și colorate cu grijă, pe șnur
-              tradițional de mărțișor. Ideale pentru 1 Martie — sau ca breloc
-              personalizat pe tot parcursul anului.
-            </p>
-            <ul class="product-meta">
-              <li>Modele florale, inimioare, mesaje</li>
-              <li>Personalizare cu nume</li>
-              <li>Ambalaj pe cartonaș decorativ</li>
-            </ul>
-          </div>
-        </article>
+          </article>
 
-        <!-- Plaques -->
-        <article class="product-card" id="placute">
-          <div class="product-gallery">
-            <div class="product-main">
-              <img src="public/products/plaque-1.jpg" alt="Plăcuță inimă din lemn cu mesaj personalizat și trandafir roșu" data-gallery="plaque" data-index="0" />
+          <article class="product-tile" id="brelocuri">
+            <div class="tile-media">
+              <img src="public/products/keychain-1.jpg" alt="Brelocuri inimă din lemn, personalizate" width="400" height="400" />
             </div>
-            <div class="product-thumbs" role="list">
-              <button type="button" class="thumb is-active" data-gallery="plaque" data-src="public/products/plaque-1.jpg" aria-label="Plăcuță 1">
-                <img src="public/products/plaque-1.jpg" alt="" />
-              </button>
-              <button type="button" class="thumb" data-gallery="plaque" data-src="public/products/plaque-2.jpg" aria-label="Plăcuță 2">
-                <img src="public/products/plaque-2.jpg" alt="" />
-              </button>
+            <div class="tile-body">
+              <h3>Brelocuri</h3>
+              <p class="price"><span class="price-value">6 lei</span></p>
+              <p>Brelocuri din lemn (inimioare și alte forme), gravate cu text sau desen.</p>
+              <p class="tile-tag">Personalizare inclusă</p>
             </div>
-          </div>
-          <div class="product-info">
-            <h3>Plăcuțe inimă</h3>
-            <p class="price"><span class="price-value">de la 70 lei</span></p>
-            <p>
-              Plăcuțe în formă de inimă, din lemn, cu mesaj personalizat, date
-              speciale și detalii colorate. Un cadou de neuitat pentru aniversări,
-              Valentine's Day sau orice ocazie importantă.
-            </p>
-            <ul class="product-meta">
-              <li>Text și design la alegere</li>
-              <li>Stand din lemn inclus</li>
-              <li>Dată sau dedicatie gravată</li>
-            </ul>
-          </div>
-        </article>
+          </article>
+
+          <article class="product-tile" id="semne-de-carte">
+            <div class="tile-media">
+              <img src="public/products/bookmark-1.jpg" alt="Semn de carte din lemn personalizat" width="400" height="400" />
+            </div>
+            <div class="tile-body">
+              <h3>Semne de carte</h3>
+              <p class="price"><span class="price-value">8 lei</span></p>
+              <p>Semne de carte din lemn, gravate cu citate, nume sau mesaje pentru școală și nu numai.</p>
+              <p class="tile-tag">Personalizare inclusă</p>
+            </div>
+          </article>
+
+          <article class="product-tile" id="inima-mare">
+            <div class="tile-media">
+              <img src="public/products/heart-big-1.jpg" alt="Inimă mare din lemn personalizată" width="400" height="400" />
+            </div>
+            <div class="tile-body">
+              <h3>Inimă mare</h3>
+              <p class="price"><span class="price-value">20 lei</span></p>
+              <p>Inimă din lemn cu mesaj personalizat — ideală pentru aniversări și ocazii speciale.</p>
+              <p class="tile-dim">Dimensiuni: 10 cm × 12 cm</p>
+              <p class="tile-tag">Personalizare inclusă</p>
+            </div>
+          </article>
+
+          <article class="product-tile" id="tablou-a4">
+            <div class="tile-media">
+              <img src="public/products/a4-1.jpg" alt="Tablou / poză A4 personalizată" width="400" height="400" />
+            </div>
+            <div class="tile-body">
+              <h3>Tablou / poză A4</h3>
+              <p class="price"><span class="price-value">35 lei</span></p>
+              <p>Tablou sau poză în format A4, personalizat — un cadou de neuitat pe perete sau birou.</p>
+              <p class="tile-tag">Personalizare inclusă</p>
+            </div>
+          </article>
+
+          <article class="product-tile" id="glob">
+            <div class="tile-media">
+              <img src="public/products/globe-1.jpg" alt="Glob din lemn personalizat cu inițială și nume" width="400" height="400" />
+            </div>
+            <div class="tile-body">
+              <h3>Glob</h3>
+              <p class="price"><span class="price-value">6 lei</span></p>
+              <p>Globuri din lemn pentru brad sau cadou, gravate cu inițială, nume și detalii festive.</p>
+              <p class="tile-tag">Personalizare inclusă</p>
+            </div>
+          </article>
+
+          <article class="product-tile" id="martisoare">
+            <div class="tile-media">
+              <img src="public/products/martisor-1.jpg" alt="Mărțișor din lemn personalizat" width="400" height="400" />
+            </div>
+            <div class="tile-body">
+              <h3>Mărțișoare</h3>
+              <p class="price"><span class="price-value">6 lei</span></p>
+              <p>Mărțișoare din lemn pe șnur tradițional, gravate și colorate cu grijă.</p>
+              <p class="tile-tag">Personalizare inclusă</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PACKAGES -->
+    <section class="section packages" id="pachete" aria-labelledby="pachete-title">
+      <div class="container">
+        <header class="section-header">
+          <p class="eyebrow">Ofertă</p>
+          <h2 id="pachete-title">Pachete</h2>
+          <p class="section-lead">Combinații gata de cadou — mai avantajoase decât produsele luate separat.</p>
+        </header>
+
+        <div class="package-grid">
+          <article class="package-card" id="pachet-semn-magnet">
+            <div class="tile-media">
+              <img src="public/products/package-bookmark-magnet.jpg" alt="Pachet semn de carte și magnet personalizat" width="480" height="360" />
+            </div>
+            <div class="tile-body">
+              <h3>Semn de carte + magnet</h3>
+              <p class="price"><span class="price-value">15 lei</span></p>
+              <p>Semn de carte din lemn + magnet personalizat — ideal pentru promoții și clasă.</p>
+              <p class="tile-tag">Personalizare inclusă</p>
+            </div>
+          </article>
+
+          <article class="package-card" id="pachet-glob-pix">
+            <div class="tile-media">
+              <img src="public/products/package-globe-pen.jpg" alt="Pachet glob și pix personalizate" width="480" height="360" />
+            </div>
+            <div class="tile-body">
+              <h3>Glob + pix</h3>
+              <p class="price"><span class="price-value">12 lei</span></p>
+              <p>Glob din lemn + pix personalizat — set festiv, gata de oferit.</p>
+              <p class="tile-tag">Personalizare inclusă</p>
+            </div>
+          </article>
+
+          <article class="package-card" id="pachet-pix-breloc">
+            <div class="tile-media">
+              <img src="public/products/package-pen-keychain.jpg" alt="Pachet pix și breloc personalizate" width="480" height="360" />
+            </div>
+            <div class="tile-body">
+              <h3>Pix + breloc</h3>
+              <p class="price"><span class="price-value">12 lei</span></p>
+              <p>Pix din lemn + breloc personalizat — perfect pentru absolvire sau mulțumiri.</p>
+              <p class="tile-tag">Personalizare inclusă</p>
+            </div>
+          </article>
+        </div>
       </div>
     </section>
 
@@ -180,7 +231,7 @@
           <li class="step">
             <span class="step-num" aria-hidden="true">01</span>
             <h3>Alege produsul</h3>
-            <p>Selectează din colecție: pix, mărțișor/breloc sau plăcuță inimă.</p>
+            <p>Selectează din colecție sau din pachete: pix, creion, breloc, semn de carte, glob și altele.</p>
           </li>
           <li class="step">
             <span class="step-num" aria-hidden="true">02</span>
@@ -212,7 +263,7 @@
     <section class="section about" id="despre" aria-labelledby="despre-title">
       <div class="container about-grid">
         <div class="about-visual">
-          <img src="public/products/plaque-2.jpg" alt="Plăcuță inimă din lemn, detaliu handmade" width="600" height="600" />
+          <img src="public/products/package-pen-keychain.jpg" alt="Set cadou din lemn personalizat, handmade" width="600" height="600" />
         </div>
         <div class="about-copy">
           <p class="eyebrow">Despre noi</p>
@@ -256,7 +307,7 @@
           @bestgift.bv
         </a>
         <p class="contact-prices">
-          Pixuri &amp; mărțișoare: <strong>35 lei</strong> · Plăcuțe: <strong>de la 70 lei</strong> · Livrare: <strong>~19 lei</strong>
+          De la <strong>6 lei</strong> · Pachete de la <strong>12 lei</strong> · Livrare: <strong>~19 lei</strong>
         </p>
       </div>
     </section>
@@ -268,7 +319,7 @@
         <span class="logo-mark" aria-hidden="true">♥</span>
         <span class="logo-text">bestgift<span class="logo-dot">.bv</span></span>
       </a>
-      <p class="footer-tag">Cadouri handmade din lemn · Brașov</p>
+      <p class="footer-tag">Cadouri personalizate din lemn · Brașov</p>
       <a class="footer-ig" href="https://instagram.com/bestgift.bv" target="_blank" rel="noopener noreferrer">instagram.com/bestgift.bv</a>
       <p class="footer-copy">&copy; <span id="year"></span> bestgift.bv</p>
     </div>
